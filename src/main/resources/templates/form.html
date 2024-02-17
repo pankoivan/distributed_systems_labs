@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ввод данных</title>
+        <link href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" rel="stylesheet" />
+    </head>
+
+    <body class="min-vh-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <form action="#" th:action="@{/info}" class="bg-dark text-white border rounded p-3">
+                    <div class="mb-2">
+                        <label for="lastname" class="form-label">Фамилия</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Иванов" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Иван" />
+                    </div>
+                    <div class="mb-0">
+                        <label for="email" class="form-label">Почта</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="example@mail" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

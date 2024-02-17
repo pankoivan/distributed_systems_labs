@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Вывод данных</title>
+        <link href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" rel="stylesheet" />
+    </head>
+
+    <body class="min-vh-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="bg-dark text-white border rounded p-3">
+                    <p>
+                        Фамилия:
+                        <span th:text="${info.lastname}"></span>
+                    </p>
+                    <p>
+                        Имя:
+                        <span th:text="${info.name}"></span>
+                    </p>
+                    <p>
+                        Почта:
+                        <span th:text="${info.patronymic}"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
