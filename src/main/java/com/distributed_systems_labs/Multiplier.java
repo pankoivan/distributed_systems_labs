@@ -9,7 +9,7 @@ public class Multiplier {
 
     @PostMapping("/multiply")
     public Response multiply(@RequestBody Request request) {
-        return new Response(Double.parseDouble(String.format("%,2f", request.getAmount() * request.getRate())));
+        return new Response(Double.parseDouble(String.format("%.2f", request.getAmount() * request.getRate()).replaceAll(",", ".")));
     }
 
 }
