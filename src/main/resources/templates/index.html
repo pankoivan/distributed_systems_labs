@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="ru" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Поиск стран</title>
+        <link href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" rel="stylesheet" />
+    </head>
+
+    <body class="min-vh-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center fs-3">Поиск стран</p>
+                    <div>
+                        <input list="countries" type="text" name="country" id="country" class="form-control" placeholder="Германия" />
+                        <ul id="countries" role="listbox" class="list-group fs-5 mt-2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../static/script.js" th:src="@{/script.js}"></script>
+    </body>
+</html>
